@@ -7,11 +7,13 @@ public class CalcApp {
     public static void main(String[] args) {
     	
     	Scanner scan = new Scanner(System.in);
+    	String num;
+    	int num1, num2;
     	
    		while(true){
    			
    			System.out.print(">>");
-   			String num = scan.nextLine();
+   			num = scan.nextLine();
    			
    			if(num.equals("/q")) {
    				System.out.println("종료합니다.");
@@ -19,8 +21,8 @@ public class CalcApp {
    			}
    			
    			String calculation = num.substring(2,3);
-   			int num1 = Integer.parseInt(num.substring(0, 1));
-   			int num2 = Integer.parseInt(num.substring(4));
+   			num1 = Integer.parseInt(num.substring(0, 1));
+   			num2 = Integer.parseInt(num.substring(4));
    			
     		if(calculation.equals("+")) {
        			Add add = new Add();
@@ -37,8 +39,6 @@ public class CalcApp {
         	}else {
         		System.out.println("알 수 없는 연산입니다.");
         	}
-    		
    		}
-   		
     }
 }
