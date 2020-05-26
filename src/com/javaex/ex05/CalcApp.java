@@ -22,7 +22,6 @@ public class CalcApp {
    			int num1 = Integer.parseInt(num.substring(0, 1));
    			int num2 = Integer.parseInt(num.substring(4));
    			
-   			
     		if(calculation.equals("+")) {
        			Add add = new Add();
        			System.out.println(">> " + add.calculate(num1, num2));
