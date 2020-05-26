@@ -12,7 +12,6 @@ public class FriendApp {
 		for(int i = 0 ; i < 3; i++) {
 			String f01 = scan.nextLine();
 			friend[i] = new Friend(f01.substring(0, 3), f01.substring(4, 17), f01.substring(18));
-			
 		}
 		
 		for(int i = 0; i < 3; i++) {
